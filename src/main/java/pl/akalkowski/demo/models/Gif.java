@@ -5,20 +5,21 @@ import org.springframework.stereotype.Component;
 /**
  * Created by monik on 04.11.2017.
  */
-@Component
+
 public class Gif {
     public Long id;
     public String name;
     public boolean favorite;
-
+    public Category category;
 
     public Gif() {
     }
 
-    public Gif(Long id, String name, boolean favorite) {
+    public Gif(Long id, String name, boolean favorite, Category category) {
         this.id = id;
         this.name = name;
         this.favorite = favorite;
+        this.category = category;
     }
 
     public Long getId() {
@@ -43,5 +44,13 @@ public class Gif {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

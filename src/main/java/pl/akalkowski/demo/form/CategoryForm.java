@@ -10,7 +10,7 @@ import javax.validation.constraints.Pattern;
  */
 public class CategoryForm {
     @NotBlank
-    @Pattern( regexp = "[a-z]*[A-Z]*")
+    @Pattern(regexp = "[a-z]*[A-Z]*")
     private String name;
 
     public CategoryForm() {

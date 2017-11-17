@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="icon" th:href="@{/favicon.png}" />
+    <link rel="icon" th:href="@{/favicon.png}"/>
 
-    <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" th:href="@{/app.css}" />
+    <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" th:href="@{/app.css}"/>
 
     <title>AddCategoris</title>
 </head>
@@ -16,8 +16,9 @@
 <form action="/categories/addcategory" method="post">
     <p>Podaj nazwę kategorii</p>
 
-     <input type="text" th:name="name"/>
-    <input type="submit" value="Dodaj kategorie" />
+
+    <input type="text" th:name="name"/>
+    <input type="submit" value="Dodaj kategorie"/>
 </form>
 
 <script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>

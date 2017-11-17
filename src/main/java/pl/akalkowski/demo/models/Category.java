@@ -11,20 +11,19 @@ import javax.persistence.*;
 @Table(name = "category")
 public class Category {
     @Id
-
-
-
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
     String name;
 
     public Category() {
     }
-    public Category(String name){
-        this.name=name;
+
+    public Category(String name) {
+        this.name = name;
     }
-    public Category(CategoryForm form){
-        name=form.getName();
+
+    public Category(CategoryForm form) {
+        name = form.getName();
     }
 
     public Category(Integer id, String name) {

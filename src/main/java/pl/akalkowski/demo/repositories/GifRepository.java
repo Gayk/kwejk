@@ -19,11 +19,11 @@ public class GifRepository {
 
     public List<Gif> getFavorites() {
         List<Gif> favorites = new ArrayList<>();
-        gifs.stream().forEach(gif -> {
-            if (gif.isFavorite()){
-                favorites.add(gif);
+        gifs.stream().forEach( gif -> {
+            if (gif.isFavorite()) {
+                favorites.add( gif );
             }
-        });
+        } );
         return favorites;
     }
 
@@ -50,11 +50,11 @@ public class GifRepository {
 //        } );
 //        return gifsByCategory;
 
-    public List<Gif> allGifsByCategory(Category category) {
+    public List<Gif> getGifsByCategoryId(Long categoryId) {
         List<Gif> categoryGif = new ArrayList<>();
         for (Gif gif : gifs) {
-            if (gif.getCategory().equals(category)) {
-                categoryGif.add(gif);
+            if (gif.getCategory().getId().equals( categoryId )) {
+                categoryGif.add( gif );
             }
         }
         return categoryGif;

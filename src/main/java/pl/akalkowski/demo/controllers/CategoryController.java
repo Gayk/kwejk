@@ -27,41 +27,22 @@ public class CategoryController {
 
     @GetMapping("")
     public String showAllCategories(ModelMap modelMap) {
-        modelMap.addAttribute("categories", categoryCrudrepository.findAll());
+        modelMap.addAttribute( "categories", categoryCrudrepository.findAll() );
         return "categories";
     }
-//    @GetMapping("/category/{id}")
-//    String c(@PathVariable Long id, ModelMap modelMap){
-//        modelMap.addAttribute( "category", categoryRepository.findById( id ) );
-//
-//        return "category";
-//    }
-//    @GetMapping("searchCategory")
-//    String searchCaregory(@RequestParam String q, ModelMap modelMap){
-//        if((categoryRepository.searchCategory( q )==null)) {
-//            modelMap.addAttribute( "comment", "This category don't exists" );
-//        }else {
-//            List<Category> categories = new ArrayList<>(  );
-//            categories.add( (Category) categoryRepository.searchCategory( q ) );
-//            modelMap.addAttribute( "categories", categories );
-//
-//        }
-//    return "categories";
+
     @GetMapping("addcategory")
-    public String addCategory(Model model){
-        model.addAttribute( "name", new CategoryForm(  ) );
+    public String addCategory(Model model) {
+        model.addAttribute( "name", new CategoryForm() );
         return "add-category";
     }
+
     @PostMapping("/addcategory")
-    public String addCategory(@RequestParam("name") String name, Model model)
-    {
-        categoryCrudrepository.save(new Category(name));
+    public String addCategory(@RequestParam("name") String name, Model model) {
+        categoryCrudrepository.save( new Category( name ) );
         System.out.println();
-        System.out.println("Dodano nową kategorie");
+        System.out.println( "Dodano nową kategorie" );
         return "add-category";
     }
-
-
-
-    }
+}
 

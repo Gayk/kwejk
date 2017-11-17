@@ -5,12 +5,13 @@ import pl.akalkowski.demo.models.Category;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Repository
 public class CategoryRepository {
 
     ConfigurationRepository configurationRepository;
 
-    public List<Category> categories= new ArrayList<>();
+    public List<Category> categories = new ArrayList<>();
 
 
     public List<Category> showAll() {
@@ -20,9 +21,10 @@ public class CategoryRepository {
 
     public void add(Category category) {
 
-        categories.add(category);
+        categories.add( category );
     }
-    public Category findById(Integer id){
+
+    public Category findById(Integer id) {
         for (Category category : categories) {
             if (category.getId().equals( id )) {
                 return category;
@@ -30,19 +32,19 @@ public class CategoryRepository {
         }
         return null;
     }
+
     public Category getCategory(int id) {
         for (Category category : categories) {
-            if (category.getId().equals(id)) {
+            if (category.getId().equals( id )) {
                 return category;
             }
         }
         return new Category();
     }
-    public Integer getLastId(){
-        return categories.get(categories.size()+1).getId();
+
+    public Integer getLastId() {
+        return categories.get( categories.size() + 1 ).getId();
     }
-
-
 
 
 }
