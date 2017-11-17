@@ -1,4 +1,4 @@
-package pl.akalkowski.demo.form;
+package pl.mgaik.form;
 
 import org.hibernate.validator.constraints.NotBlank;
 

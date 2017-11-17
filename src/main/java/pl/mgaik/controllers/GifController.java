@@ -1,4 +1,4 @@
-package pl.akalkowski.demo.controllers;
+package pl.mgaik.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,8 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
-import pl.akalkowski.demo.models.Category;
-import pl.akalkowski.demo.repositories.GifRepository;
+import pl.mgaik.repositories.GifRepository;
 
 /**
  * Created by monik on 04.11.2017.

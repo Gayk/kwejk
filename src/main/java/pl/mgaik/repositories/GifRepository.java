@@ -1,7 +1,6 @@
-package pl.akalkowski.demo.repositories;
+package pl.mgaik.repositories;
 
-import pl.akalkowski.demo.models.Category;
-import pl.akalkowski.demo.models.Gif;
+import pl.mgaik.models.Gif;
 
 import java.util.ArrayList;
 import java.util.List;

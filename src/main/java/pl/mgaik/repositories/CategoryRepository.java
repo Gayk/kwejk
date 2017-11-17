@@ -1,7 +1,7 @@
-package pl.akalkowski.demo.repositories;
+package pl.mgaik.repositories;
 
 import org.springframework.stereotype.Repository;
-import pl.akalkowski.demo.models.Category;
+import pl.mgaik.models.Category;
 
 import java.util.ArrayList;
 import java.util.List;

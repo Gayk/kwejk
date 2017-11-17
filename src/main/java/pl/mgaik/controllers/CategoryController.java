@@ -1,20 +1,14 @@
-package pl.akalkowski.demo.controllers;
+package pl.mgaik.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import pl.akalkowski.demo.form.CategoryForm;
-import pl.akalkowski.demo.models.Category;
-import pl.akalkowski.demo.repositories.CategoryCrudrepository;
-import pl.akalkowski.demo.repositories.CategoryRepository;
-import pl.akalkowski.demo.repositories.GifRepository;
-
-import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
+import pl.mgaik.form.CategoryForm;
+import pl.mgaik.models.Category;
+import pl.mgaik.repositories.CategoryCrudrepository;
+import pl.mgaik.repositories.GifRepository;
 
 @Controller
 @RequestMapping("/categories")
@@ -36,6 +30,7 @@ public class CategoryController {
         model.addAttribute( "name", new CategoryForm() );
         return "add-category";
     }
+
 
     @PostMapping("/addcategory")
     public String addCategory(@RequestParam("name") String name, Model model) {

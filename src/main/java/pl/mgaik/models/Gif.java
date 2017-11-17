@@ -1,6 +1,4 @@
-package pl.akalkowski.demo.models;
-
-import org.springframework.stereotype.Component;
+package pl.mgaik.models;
 
 /**
  * Created by monik on 04.11.2017.

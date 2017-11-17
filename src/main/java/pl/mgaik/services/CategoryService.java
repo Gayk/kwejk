@@ -1,9 +1,9 @@
-package pl.akalkowski.demo.services;
+package pl.mgaik.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.akalkowski.demo.models.Category;
-import pl.akalkowski.demo.repositories.CategoryRepository;
+import pl.mgaik.models.Category;
+import pl.mgaik.repositories.CategoryRepository;
 
 import java.util.List;
 

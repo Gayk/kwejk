@@ -1,9 +1,6 @@
-package pl.akalkowski.demo.models;
+package pl.mgaik.models;
 
-import org.hibernate.annotations.Generated;
-import org.springframework.beans.factory.annotation.Autowired;
-import pl.akalkowski.demo.form.CategoryForm;
-import pl.akalkowski.demo.repositories.CategoryRepository;
+import pl.mgaik.form.CategoryForm;
 
 import javax.persistence.*;
 

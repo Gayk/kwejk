@@ -1,9 +1,8 @@
-package pl.akalkowski.demo.repositories;
+package pl.mgaik.repositories;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import pl.akalkowski.demo.models.Category;
-import pl.akalkowski.demo.models.Gif;
+import pl.mgaik.models.Gif;
 
 @Configuration
 public class ConfigurationRepository {
