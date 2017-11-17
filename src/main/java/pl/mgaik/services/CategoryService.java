@@ -13,8 +13,6 @@ public class CategoryService {
     @Autowired
     CategoryRepository categoryRepository;
 
-
-
     public List<Category> showAll() {
         return categoryRepository.showAll();
     }
